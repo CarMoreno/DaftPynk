@@ -5,7 +5,7 @@ from controller.controller import *
 
 """
 Author: Carlos Andrés Moreno
-Page: http://carmoreno.github.io
+Page: http://carmoreno.github.io/
 Version: 1.0
 Licence: Creative Commons 4.0
 """
