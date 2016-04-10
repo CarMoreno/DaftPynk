@@ -26,9 +26,6 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
         MainWindow.resize(1182, 576)
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(_fromUtf8("../../../../Users/Usuario/Documents/Proyectos/Launchpy/image/icon.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        MainWindow.setWindowIcon(icon)
         MainWindow.setStyleSheet(_fromUtf8("background-color: #263238;"))
         self.centralwidget = QtGui.QWidget(MainWindow)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
@@ -354,14 +351,14 @@ class Ui_MainWindow(object):
 "font-family: \'Verdana\';\n"
 "font-size: 11px;"))
         self.label_doit.setObjectName(_fromUtf8("label_doit"))
-        self.makeus = QtGui.QLabel(self.frame)
-        self.makeus.setGeometry(QtCore.QRect(350, 40, 51, 16))
-        self.makeus.setStyleSheet(_fromUtf8("background-color: #263238;\n"
+        self.label_makeus = QtGui.QLabel(self.frame)
+        self.label_makeus.setGeometry(QtCore.QRect(350, 40, 51, 16))
+        self.label_makeus.setStyleSheet(_fromUtf8("background-color: #263238;\n"
 "border: 1px solid #263238;\n"
 "color: #78909c;\n"
 "font-family: \'Verdana\';\n"
 "font-size: 11px;"))
-        self.makeus.setObjectName(_fromUtf8("makeus"))
+        self.label_makeus.setObjectName(_fromUtf8("label_makeus"))
         self.label_morethan = QtGui.QLabel(self.frame)
         self.label_morethan.setGeometry(QtCore.QRect(650, 40, 61, 20))
         self.label_morethan.setStyleSheet(_fromUtf8("background-color: #263238;\n"
@@ -371,7 +368,7 @@ class Ui_MainWindow(object):
 "font-size: 11px;"))
         self.label_morethan.setObjectName(_fromUtf8("label_morethan"))
         self.label_hour = QtGui.QLabel(self.frame)
-        self.label_hour.setGeometry(QtCore.QRect(760, 40, 41, 20))
+        self.label_hour.setGeometry(QtCore.QRect(760, 40, 41, 16))
         self.label_hour.setStyleSheet(_fromUtf8("background-color: #263238;\n"
 "border: 1px solid #263238;\n"
 "color: #78909c;\n"
@@ -444,14 +441,14 @@ class Ui_MainWindow(object):
 "font-family: \'Verdana\';\n"
 "font-size: 11px;"))
         self.label_workits.setObjectName(_fromUtf8("label_workits"))
-        self.label_afer = QtGui.QLabel(self.frame)
-        self.label_afer.setGeometry(QtCore.QRect(780, 120, 41, 16))
-        self.label_afer.setStyleSheet(_fromUtf8("background-color: #263238;\n"
+        self.label_after = QtGui.QLabel(self.frame)
+        self.label_after.setGeometry(QtCore.QRect(780, 120, 41, 16))
+        self.label_after.setStyleSheet(_fromUtf8("background-color: #263238;\n"
 "border: 1px solid #263238;\n"
 "color: #78909c;\n"
 "font-family: \'Verdana\';\n"
 "font-size: 11px;"))
-        self.label_afer.setObjectName(_fromUtf8("label_afer"))
+        self.label_after.setObjectName(_fromUtf8("label_after"))
         self.label_over = QtGui.QLabel(self.frame)
         self.label_over.setGeometry(QtCore.QRect(980, 120, 41, 20))
         self.label_over.setStyleSheet(_fromUtf8("background-color: #263238;\n"
@@ -537,7 +534,7 @@ class Ui_MainWindow(object):
         self.label_workit.setText(_translate("MainWindow", "Work it", None))
         self.label_makeit.setText(_translate("MainWindow", "Make it", None))
         self.label_doit.setText(_translate("MainWindow", "Do it", None))
-        self.makeus.setText(_translate("MainWindow", "Make us", None))
+        self.label_makeus.setText(_translate("MainWindow", "Make us", None))
         self.label_morethan.setText(_translate("MainWindow", "More than", None))
         self.label_hour.setText(_translate("MainWindow", "Hour", None))
         self.label_our.setText(_translate("MainWindow", "Our", None))
@@ -548,7 +545,7 @@ class Ui_MainWindow(object):
         self.label_stronger.setText(_translate("MainWindow", "Stronger", None))
         self.label_ever.setText(_translate("MainWindow", "Ever", None))
         self.label_workits.setText(_translate("MainWindow", "Work its", None))
-        self.label_afer.setText(_translate("MainWindow", "After", None))
+        self.label_after.setText(_translate("MainWindow", "After", None))
         self.label_over.setText(_translate("MainWindow", "Over", None))
         self.label_hight.setText(_translate("MainWindow", "Hight", None))
         self.label_low.setText(_translate("MainWindow", "Low", None))

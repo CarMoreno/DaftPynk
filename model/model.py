@@ -45,9 +45,7 @@ class ModelLaunchpad(object):
 		elif str(button.objectName()) == PUNTO_COMA:
 			self.model_music.play_fragments(OVER)						
 
-	def behavior_space(self, array_buttons):
+	def behavior_space(self, array_buttons, array_labels):
 		"""Comportamiento para la tecla espacio"""
 		self.model_music.playFull()
-		background_color = "#{azar}".format(azar=random.randint(100, 999))
-		for button in array_buttons:
-			self.model_styles.apply_style_divers(array_buttons, background_color)
+		self.model_styles.apply_style_divers(array_buttons, array_labels)

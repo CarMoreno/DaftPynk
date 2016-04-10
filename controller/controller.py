@@ -16,14 +16,19 @@ class ControllerLaunchpad(QtGui.QMainWindow):
 						self.view.button_n, self.view.button_o, self.view.button_p, self.view.button_q, 
 						self.view.button_r, self.view.button_s, self.view.button_u, self.view.button_w,
 						self.view.button_x, self.view.button_z, self.view.button_punto_coma, self.view.button_space]
-		
+
+		self.labels = [ self.view.label_workit, self.view.label_makeit, self.view.label_doit, self.view.label_makeus,
+						self.view.label_morethan, self.view.label_hour, self.view.label_our, self.view.label_never,
+						self.view.label_harder, self.view.label_better, self.view.label_faster, self.view.label_stronger,
+						self.view.label_ever, self.view.label_after, self.view.label_workits, self.view.label_over,
+						self.view.label_normal, self.view.label_hight, self.view.label_low ]
 		self.connect_button()
 		self.view.button_space.clicked.connect(self.wrapper)
 
 	@pyqtSlot()
 	def wrapper(self):
 		"""Slot personalizado para la signal clicked de la tecla de espacio"""
-		self.the_model.behavior_space(self.buttons)
+		self.the_model.behavior_space(self.buttons, self.labels)
 
 	@pyqtSlot()
 	def is_pressed(self):
@@ -32,13 +37,16 @@ class ControllerLaunchpad(QtGui.QMainWindow):
 			if button.isDown():#SI el boton actual fue presionado, entonces...
 				self.the_model_style.apply_style_pressed(button)#Aplicamos estilos al boton
 				self.the_model.manager_music(button)#Manejamos la gestion de musica
-
+		for label in self.labels:
+			self.the_model_style.apply_style_pressed(label)		
 	@pyqtSlot()
 	def is_released(self):
 		"Slot para cuando una tecla es liberada"
 		for button in self.buttons:
 			if not button.isDown():
-				self.the_model_style.apply_style_released(button)			
+				self.the_model_style.apply_style_released(button)
+		for label in self.labels:
+			self.the_model_style.apply_style_released(label)					
 			
 	def connect_button(self):
 		"""Conecta cada boton a las senales de pressed y released"""

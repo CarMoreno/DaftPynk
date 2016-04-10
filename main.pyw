@@ -16,7 +16,7 @@ La arquitectura de esta pequeña aplicación sigue un patrón MVC, espero se út
 Pull Request son bien recibidos :-)
 """
 if __name__ == '__main__':
-	myappid = 'mycompany.myproduct.subproduct.version' # arbitrary string
+	myappid = 'Carmoreno.Launchpy.Version1.0' # arbitrary string
 	ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 
 	app = QtGui.QApplication(sys.argv)
