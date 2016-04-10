@@ -26,6 +26,9 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
         MainWindow.resize(1182, 576)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(_fromUtf8("../../../../Users/Usuario/Documents/Proyectos/Launchpy/image/icon.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        MainWindow.setWindowIcon(icon)
         MainWindow.setStyleSheet(_fromUtf8("background-color: #263238;"))
         self.centralwidget = QtGui.QWidget(MainWindow)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
@@ -40,8 +43,8 @@ class Ui_MainWindow(object):
         self.button_coma.setGeometry(QtCore.QRect(810, 190, 81, 71))
         self.button_coma.setStyleSheet(_fromUtf8("border-radius: 6px;\n"
 "background-color: #263238;\n"
-"border: 3px solid #78909c;\n"
-"color: #78909c;\n"
+"border: 3px solid #455a64;\n"
+"color: #455a64;\n"
 "font-family: \'Verdana\';\n"
 "font-size: 25px;\n"
 ""))
@@ -50,10 +53,11 @@ class Ui_MainWindow(object):
         self.button_v.setGeometry(QtCore.QRect(410, 190, 81, 71))
         self.button_v.setStyleSheet(_fromUtf8("border-radius: 6px;\n"
 "background-color: #263238;\n"
-"border: 3px solid #78909c;\n"
-"color: #78909c;\n"
+"border: 3px solid #455a64;\n"
+"color: #455a64;\n"
 "font-family: \'Verdana\';\n"
 "font-size: 25px;\n"
+"\n"
 ""))
         self.button_v.setObjectName(_fromUtf8("button_v"))
         self.button_x = QtGui.QPushButton(self.frame)
@@ -90,8 +94,8 @@ class Ui_MainWindow(object):
         self.button_b.setGeometry(QtCore.QRect(510, 190, 81, 71))
         self.button_b.setStyleSheet(_fromUtf8("border-radius: 6px;\n"
 "background-color: #263238;\n"
-"border: 3px solid #78909c;\n"
-"color: #78909c;\n"
+"border: 3px solid #455a64;\n"
+"color: #455a64;\n"
 "font-family: \'Verdana\';\n"
 "font-size: 25px;\n"
 ""))
@@ -140,8 +144,8 @@ class Ui_MainWindow(object):
         self.button_c.setGeometry(QtCore.QRect(310, 190, 81, 71))
         self.button_c.setStyleSheet(_fromUtf8("border-radius: 6px;\n"
 "background-color: #263238;\n"
-"border: 3px solid #78909c;\n"
-"color: #78909c;\n"
+"border: 3px solid #455a64;\n"
+"color: #455a64;\n"
 "font-family: \'Verdana\';\n"
 "font-size: 25px;\n"
 ""))
@@ -170,8 +174,8 @@ class Ui_MainWindow(object):
         self.button_y.setGeometry(QtCore.QRect(540, 30, 81, 71))
         self.button_y.setStyleSheet(_fromUtf8("border-radius: 6px;\n"
 "background-color: #263238;\n"
-"border: 3px solid #78909c;\n"
-"color: #78909c;\n"
+"border: 3px solid #455a64;\n"
+"color: #455a64;\n"
 "font-family: \'Verdana\';\n"
 "font-size: 25px;\n"
 ""))
@@ -190,8 +194,8 @@ class Ui_MainWindow(object):
         self.button_g.setGeometry(QtCore.QRect(460, 110, 81, 71))
         self.button_g.setStyleSheet(_fromUtf8("border-radius: 6px;\n"
 "background-color: #263238;\n"
-"border: 3px solid #78909c;\n"
-"color: #78909c;\n"
+"border: 3px solid #455a64;\n"
+"color: #455a64;\n"
 "font-family: \'Verdana\';\n"
 "font-size: 25px;\n"
 ""))
@@ -260,8 +264,8 @@ class Ui_MainWindow(object):
         self.button_h.setGeometry(QtCore.QRect(560, 110, 81, 71))
         self.button_h.setStyleSheet(_fromUtf8("border-radius: 6px;\n"
 "background-color: #263238;\n"
-"border: 3px solid #78909c;\n"
-"color: #78909c;\n"
+"border: 3px solid #455a64;\n"
+"color: #455a64;\n"
 "font-family: \'Verdana\';\n"
 "font-size: 25px;\n"
 ""))
@@ -280,8 +284,8 @@ class Ui_MainWindow(object):
         self.button_m.setGeometry(QtCore.QRect(710, 190, 81, 71))
         self.button_m.setStyleSheet(_fromUtf8("border-radius: 6px;\n"
 "background-color: #263238;\n"
-"border: 3px solid #78909c;\n"
-"color: #78909c;\n"
+"border: 3px solid #455a64;\n"
+"color: #455a64;\n"
 "font-family: \'Verdana\';\n"
 "font-size: 25px;\n"
 ""))
@@ -320,12 +324,170 @@ class Ui_MainWindow(object):
         self.button_t.setGeometry(QtCore.QRect(440, 30, 81, 71))
         self.button_t.setStyleSheet(_fromUtf8("border-radius: 6px;\n"
 "background-color: #263238;\n"
-"border: 3px solid #78909c;\n"
-"color: #78909c;\n"
+"border: 3px solid #455a64;\n"
+"color: #455a64;\n"
 "font-family: \'Verdana\';\n"
 "font-size: 25px;\n"
 ""))
         self.button_t.setObjectName(_fromUtf8("button_t"))
+        self.label_workit = QtGui.QLabel(self.frame)
+        self.label_workit.setGeometry(QtCore.QRect(50, 40, 51, 16))
+        self.label_workit.setStyleSheet(_fromUtf8("background-color: #263238;\n"
+"border: 1px solid #263238;\n"
+"color: #78909c;\n"
+"font-family: \'Verdana\';\n"
+"font-size: 11px;"))
+        self.label_workit.setObjectName(_fromUtf8("label_workit"))
+        self.label_makeit = QtGui.QLabel(self.frame)
+        self.label_makeit.setGeometry(QtCore.QRect(150, 40, 51, 16))
+        self.label_makeit.setStyleSheet(_fromUtf8("background-color: #263238;\n"
+"border: 1px solid #263238;\n"
+"color: #78909c;\n"
+"font-family: \'Verdana\';\n"
+"font-size: 11px;"))
+        self.label_makeit.setObjectName(_fromUtf8("label_makeit"))
+        self.label_doit = QtGui.QLabel(self.frame)
+        self.label_doit.setGeometry(QtCore.QRect(260, 40, 41, 16))
+        self.label_doit.setStyleSheet(_fromUtf8("background-color: #263238;\n"
+"border: 1px solid #263238;\n"
+"color: #78909c;\n"
+"font-family: \'Verdana\';\n"
+"font-size: 11px;"))
+        self.label_doit.setObjectName(_fromUtf8("label_doit"))
+        self.makeus = QtGui.QLabel(self.frame)
+        self.makeus.setGeometry(QtCore.QRect(350, 40, 51, 16))
+        self.makeus.setStyleSheet(_fromUtf8("background-color: #263238;\n"
+"border: 1px solid #263238;\n"
+"color: #78909c;\n"
+"font-family: \'Verdana\';\n"
+"font-size: 11px;"))
+        self.makeus.setObjectName(_fromUtf8("makeus"))
+        self.label_morethan = QtGui.QLabel(self.frame)
+        self.label_morethan.setGeometry(QtCore.QRect(650, 40, 61, 20))
+        self.label_morethan.setStyleSheet(_fromUtf8("background-color: #263238;\n"
+"border: 1px solid #263238;\n"
+"color: #78909c;\n"
+"font-family: \'Verdana\';\n"
+"font-size: 11px;"))
+        self.label_morethan.setObjectName(_fromUtf8("label_morethan"))
+        self.label_hour = QtGui.QLabel(self.frame)
+        self.label_hour.setGeometry(QtCore.QRect(760, 40, 41, 20))
+        self.label_hour.setStyleSheet(_fromUtf8("background-color: #263238;\n"
+"border: 1px solid #263238;\n"
+"color: #78909c;\n"
+"font-family: \'Verdana\';\n"
+"font-size: 11px;"))
+        self.label_hour.setObjectName(_fromUtf8("label_hour"))
+        self.label_our = QtGui.QLabel(self.frame)
+        self.label_our.setGeometry(QtCore.QRect(860, 40, 41, 16))
+        self.label_our.setStyleSheet(_fromUtf8("background-color: #263238;\n"
+"border: 1px solid #263238;\n"
+"color: #78909c;\n"
+"font-family: \'Verdana\';\n"
+"font-size: 11px;"))
+        self.label_our.setObjectName(_fromUtf8("label_our"))
+        self.label_never = QtGui.QLabel(self.frame)
+        self.label_never.setGeometry(QtCore.QRect(960, 40, 51, 16))
+        self.label_never.setStyleSheet(_fromUtf8("background-color: #263238;\n"
+"border: 1px solid #263238;\n"
+"color: #78909c;\n"
+"font-family: \'Verdana\';\n"
+"font-size: 11px;"))
+        self.label_never.setObjectName(_fromUtf8("label_never"))
+        self.label_normal = QtGui.QLabel(self.frame)
+        self.label_normal.setGeometry(QtCore.QRect(120, 200, 51, 16))
+        self.label_normal.setStyleSheet(_fromUtf8("border-radius: 5px;\n"
+"background-color: #78909c;\n"
+"border: 1px solid #263238;\n"
+"color: #263238;\n"
+"font-family: \'Verdana\';\n"
+"font-size: 11px;\n"
+""))
+        self.label_normal.setObjectName(_fromUtf8("label_normal"))
+        self.label_better = QtGui.QLabel(self.frame)
+        self.label_better.setGeometry(QtCore.QRect(170, 120, 51, 16))
+        self.label_better.setStyleSheet(_fromUtf8("background-color: #263238;\n"
+"border: 1px solid #263238;\n"
+"color: #78909c;\n"
+"font-family: \'Verdana\';\n"
+"font-size: 11px;"))
+        self.label_better.setObjectName(_fromUtf8("label_better"))
+        self.label_faster = QtGui.QLabel(self.frame)
+        self.label_faster.setGeometry(QtCore.QRect(270, 120, 51, 16))
+        self.label_faster.setStyleSheet(_fromUtf8("background-color: #263238;\n"
+"border: 1px solid #263238;\n"
+"color: #78909c;\n"
+"font-family: \'Verdana\';\n"
+"font-size: 11px;"))
+        self.label_faster.setObjectName(_fromUtf8("label_faster"))
+        self.label_stronger = QtGui.QLabel(self.frame)
+        self.label_stronger.setGeometry(QtCore.QRect(370, 120, 61, 16))
+        self.label_stronger.setStyleSheet(_fromUtf8("background-color: #263238;\n"
+"border: 1px solid #263238;\n"
+"color: #78909c;\n"
+"font-family: \'Verdana\';\n"
+"font-size: 11px;"))
+        self.label_stronger.setObjectName(_fromUtf8("label_stronger"))
+        self.label_ever = QtGui.QLabel(self.frame)
+        self.label_ever.setGeometry(QtCore.QRect(680, 120, 31, 16))
+        self.label_ever.setStyleSheet(_fromUtf8("background-color: #263238;\n"
+"border: 1px solid #263238;\n"
+"color: #78909c;\n"
+"font-family: \'Verdana\';\n"
+"font-size: 11px;"))
+        self.label_ever.setObjectName(_fromUtf8("label_ever"))
+        self.label_workits = QtGui.QLabel(self.frame)
+        self.label_workits.setGeometry(QtCore.QRect(870, 120, 51, 20))
+        self.label_workits.setStyleSheet(_fromUtf8("background-color: #263238;\n"
+"border: 1px solid #263238;\n"
+"color: #78909c;\n"
+"font-family: \'Verdana\';\n"
+"font-size: 11px;"))
+        self.label_workits.setObjectName(_fromUtf8("label_workits"))
+        self.label_afer = QtGui.QLabel(self.frame)
+        self.label_afer.setGeometry(QtCore.QRect(780, 120, 41, 16))
+        self.label_afer.setStyleSheet(_fromUtf8("background-color: #263238;\n"
+"border: 1px solid #263238;\n"
+"color: #78909c;\n"
+"font-family: \'Verdana\';\n"
+"font-size: 11px;"))
+        self.label_afer.setObjectName(_fromUtf8("label_afer"))
+        self.label_over = QtGui.QLabel(self.frame)
+        self.label_over.setGeometry(QtCore.QRect(980, 120, 41, 20))
+        self.label_over.setStyleSheet(_fromUtf8("background-color: #263238;\n"
+"border: 1px solid #263238;\n"
+"color: #78909c;\n"
+"font-family: \'Verdana\';\n"
+"font-size: 11px;"))
+        self.label_over.setObjectName(_fromUtf8("label_over"))
+        self.label_hight = QtGui.QLabel(self.frame)
+        self.label_hight.setGeometry(QtCore.QRect(230, 200, 41, 16))
+        self.label_hight.setStyleSheet(_fromUtf8("border-radius: 5px;\n"
+"background-color: #78909c;\n"
+"border: 1px solid #263238;\n"
+"color: #263238;\n"
+"font-family: \'Verdana\';\n"
+"font-size: 11px;\n"
+""))
+        self.label_hight.setObjectName(_fromUtf8("label_hight"))
+        self.label_low = QtGui.QLabel(self.frame)
+        self.label_low.setGeometry(QtCore.QRect(630, 200, 31, 16))
+        self.label_low.setStyleSheet(_fromUtf8("border-radius: 5px;\n"
+"background-color: #78909c;\n"
+"border: 1px solid #263238;\n"
+"color: #263238;\n"
+"font-family: \'Verdana\';\n"
+"font-size: 11px;\n"
+""))
+        self.label_low.setObjectName(_fromUtf8("label_low"))
+        self.label_harder = QtGui.QLabel(self.frame)
+        self.label_harder.setGeometry(QtCore.QRect(70, 120, 51, 16))
+        self.label_harder.setStyleSheet(_fromUtf8("background-color: #263238;\n"
+"border: 1px solid #263238;\n"
+"color: #78909c;\n"
+"font-family: \'Verdana\';\n"
+"font-size: 11px;"))
+        self.label_harder.setObjectName(_fromUtf8("label_harder"))
         self.titulo = QtGui.QLabel(self.centralwidget)
         self.titulo.setGeometry(QtCore.QRect(340, 30, 491, 41))
         self.titulo.setStyleSheet(_fromUtf8("color: #78909c;\n"
@@ -372,5 +534,24 @@ class Ui_MainWindow(object):
         self.button_r.setText(_translate("MainWindow", "R", None))
         self.button_w.setText(_translate("MainWindow", "W", None))
         self.button_t.setText(_translate("MainWindow", "T", None))
+        self.label_workit.setText(_translate("MainWindow", "Work it", None))
+        self.label_makeit.setText(_translate("MainWindow", "Make it", None))
+        self.label_doit.setText(_translate("MainWindow", "Do it", None))
+        self.makeus.setText(_translate("MainWindow", "Make us", None))
+        self.label_morethan.setText(_translate("MainWindow", "More than", None))
+        self.label_hour.setText(_translate("MainWindow", "Hour", None))
+        self.label_our.setText(_translate("MainWindow", "Our", None))
+        self.label_never.setText(_translate("MainWindow", "Never", None))
+        self.label_normal.setText(_translate("MainWindow", "Normal", None))
+        self.label_better.setText(_translate("MainWindow", "Better", None))
+        self.label_faster.setText(_translate("MainWindow", "Faster", None))
+        self.label_stronger.setText(_translate("MainWindow", "Stronger", None))
+        self.label_ever.setText(_translate("MainWindow", "Ever", None))
+        self.label_workits.setText(_translate("MainWindow", "Work its", None))
+        self.label_afer.setText(_translate("MainWindow", "After", None))
+        self.label_over.setText(_translate("MainWindow", "Over", None))
+        self.label_hight.setText(_translate("MainWindow", "Hight", None))
+        self.label_low.setText(_translate("MainWindow", "Low", None))
+        self.label_harder.setText(_translate("MainWindow", "Harder", None))
         self.titulo.setText(_translate("MainWindow", "Harder Better Faster ... ♪♫", None))
 
