@@ -3,7 +3,8 @@ Launchpy es un apliacion inspirada en [_Daftpunkconsole_](http://codepen.io/kowl
 
 ## Requisitos.
 Para correr esta aplicacion necesitas:
-1. Pyqt4, lo puedes descargar [aquí](http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.4/PyQt4-4.11.4-gpl-Py2.7-Qt4.8.7-x32.exe).
+
+1. Pyqt4, lo puedes descargar [aquí](http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.4/PyQt4-4.11.4-gpl-Py2.7-Qt4.8.7-x32.exe)
 2. Pygame 1.9 disponible [aquí](http://pygame.org/ftp/pygame-1.9.1.win32-py2.7.msi).
 3. Descargarte la carpeta de sonidos disponible [aquí](https://mega.nz/#!11NXmRpT!Q9NmIxzJksWG9oEwAqGttre-45Igek8cYXndWe-Hv8E). Una vez descargada la pegas al mismo nivel de las demás carpetas.
 
