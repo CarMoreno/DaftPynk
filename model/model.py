@@ -10,42 +10,42 @@ class ModelLaunchpad(object):
 		self.model_music = ModelMusic()
 		self.model_styles = ModelStyle()
 
-	def manager_music(self, button):
+	def manager_music(self, button, label):
 		"""Administrador de musica"""
-		if str(button.objectName()) == Q:
+		if str(label.objectName()) == LABEL_WORIT:
 			self.model_music.play_fragments(WORK_IT)
-		elif str(button.objectName()) == W:
+		elif str(label.objectName()) == LABEL_MAKEIT:
 			self.model_music.play_fragments(MAKE_IT)
-		elif str(button.objectName()) == E:
+		elif str(label.objectName()) == LABEL_DOIT:
 			self.model_music.play_fragments(DO_IT)
-		elif str(button.objectName()) == R:			
+		elif str(label.objectName()) == LABEL_MAKEUS:			
 			self.model_music.play_fragments(MAKE_US)
-		elif str(button.objectName()) == U:
+		elif str(label.objectName()) == LABEL_MORETHAN:
 			self.model_music.play_fragments(MORE_THAN)
-		elif str(button.objectName()) == I:
+		elif str(label.objectName()) == LABEL_HOUR:
 			self.model_music.play_fragments(HOUR)
-		elif str(button.objectName()) == O:
+		elif str(label.objectName()) == LABEL_OUR:
 			self.model_music.play_fragments(OUR)
-		elif str(button.objectName()) == P:
+		elif str(label.objectName()) == LABEL_NEVER:
 			self.model_music.play_fragments(NEVER)	
-		elif str(button.objectName()) == A:
+		elif str(label.objectName()) == LABEL_HARDER:
 			self.model_music.play_fragments(HARDER)
-		elif str(button.objectName()) == S:
+		elif str(label.objectName()) == LABEL_BETTER:
 			self.model_music.play_fragments(BETTER)
-		elif str(button.objectName()) == D:
+		elif str(label.objectName()) == LABEL_FASTER:
 			self.model_music.play_fragments(FASTER)
-		elif str(button.objectName()) == F:
+		elif str(label.objectName()) == LABEL_STRONGER:
 			self.model_music.play_fragments(STRONGER)
-		elif str(button.objectName()) == J:
+		elif str(label.objectName()) == LABEL_EVER:
 			self.model_music.play_fragments(EVER)
-		elif str(button.objectName()) == K:
+		elif str(label.objectName()) == LABEL_AFTER:
 			self.model_music.play_fragments(AFTER)
-		elif str(button.objectName()) == L:
+		elif str(label.objectName()) == LABEL_WORKITS:
 			self.model_music.play_fragments(WORK_ITS)
-		elif str(button.objectName()) == PUNTO_COMA:
+		elif str(label.objectName()) == LABEL_OVER:
 			self.model_music.play_fragments(OVER)						
 
-	def behavior_space(self, array_buttons, array_labels):
+	def behavior_space(self, button_space):
 		"""Comportamiento para la tecla espacio"""
 		self.model_music.playFull()
-		self.model_styles.apply_style_divers(array_buttons, array_labels)
+		self.model_styles.apply_style_pressed(button_space)
