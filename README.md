@@ -1,8 +1,8 @@
-# Launchpy
-Launchpy es un apliacion inspirada en [_Daftpunkconsole_](http://codepen.io/kowlor/pen/MYOKRd), un famoso tablero musical construido sobre HTML5, CSS3 Y Javascript, la idea fue realizar una app similar a la anteriormente descrita pero usando solo el lenguaje Python (version 2.7) para ello se utilizó Pyqt4 para la interfaz gráfica y Pygame 1.9 para el manejo de sonidos. El tema elegido fue [Harder, better, faster, stronger](https://www.youtube.com/watch?v=gAjR4_CbPpQ) del famoso grupo Daft Punk.
+# DaftPunkPythonic
+DaftPunkPythonic es un apliación inspirada en [Daftpunkconsole](http://codepen.io/kowlor/pen/MYOKRd), un famoso tablero musical construido sobre HTML5, CSS3 Y Javascript; la idea fue realizar una app similar a la anteriormente descrita pero usando solo el lenguaje Python (version 2.7) para ello se utilizó Pyqt4 para la interfaz gráfica y Pygame 1.9 para el manejo de sonidos. El tema elegido fue [Harder, better, faster, stronger](https://www.youtube.com/watch?v=gAjR4_CbPpQ) del famoso grupo Daft Punk.
 
 ## Requisitos.
-Para correr esta aplicacion necesitas:
+Para correr esta aplicación necesitas:
 
 1. Pyqt4, lo puedes descargar [aquí](http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.4/PyQt4-4.11.4-gpl-Py2.7-Qt4.8.7-x32.exe)
 2. Pygame 1.9 disponible [aquí](http://pygame.org/ftp/pygame-1.9.1.win32-py2.7.msi).
@@ -12,7 +12,7 @@ Para correr esta aplicacion necesitas:
 ![interface](http://i.imgur.com/8DIiStu.png)
 
 ## Estilo por boton
-![estilosPorBoton](http://i.imgur.com/Ugzp5QG.png)
+![estilosPorBoton](http://i.imgur.com/lsIOga0.png)
 
 ## Play Full
 ![playfull](http://i.imgur.com/7T3LpGW.png)

@@ -14,26 +14,17 @@ class ControllerLaunchpad(QtGui.QMainWindow):
 		self.the_model_style = ModelStyle() #Objeto model de estilos
 		#self.button es un arreglo de tuplas (button, label)
 		self.buttons = [
-						(self.view.button_a, self.view.label_harder), 
-						(self.view.button_d, self.view.label_faster),
-						(self.view.button_e, self.view.label_doit),
-						(self.view.button_f, self.view.label_stronger),
-						(self.view.button_i, self.view.label_hour),
-						(self.view.button_j, self.view.label_ever),
-						(self.view.button_k, self.view.label_after),
-						(self.view.button_l, self.view.label_workits),
-						(self.view.button_n, self.view.label_low),
-						(self.view.button_o, self.view.label_our),
-						(self.view.button_p, self.view.label_never),
-						(self.view.button_q, self.view.label_workit), 
-						(self.view.button_r, self.view.label_makeus),
-						(self.view.button_s, self.view.label_better),
-						(self.view.button_u, self.view.label_morethan),
-						(self.view.button_w, self.view.label_makeit),
-						(self.view.button_x, self.view.label_hight),
-						(self.view.button_z, self.view.label_normal), 
-						(self.view.button_punto_coma, self.view.label_over)
-					]
+			(self.view.button_a, self.view.label_harder),(self.view.button_d, self.view.label_faster),
+			(self.view.button_e, self.view.label_doit),(self.view.button_f, self.view.label_stronger),
+			(self.view.button_i, self.view.label_hour),(self.view.button_j, self.view.label_ever),
+			(self.view.button_k, self.view.label_after),(self.view.button_l, self.view.label_workits),
+			(self.view.button_n, self.view.label_low),(self.view.button_o, self.view.label_our),
+			(self.view.button_p, self.view.label_never),(self.view.button_q, self.view.label_workit), 
+			(self.view.button_r, self.view.label_makeus),(self.view.button_s, self.view.label_better),
+			(self.view.button_u, self.view.label_morethan),(self.view.button_w, self.view.label_makeit),
+			(self.view.button_x, self.view.label_hight),(self.view.button_z, self.view.label_normal), 
+			(self.view.button_punto_coma, self.view.label_over)
+		]
 		self.connect_button()
 		self.view.button_space.clicked.connect(self.wrapper)
 
