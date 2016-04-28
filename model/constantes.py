@@ -15,6 +15,10 @@ LABEL_AFTER = "label_after"
 LABEL_HOUR = "label_hour"
 LABEL_DOIT = "label_doit"
 LABEL_OVER = "label_over"
+LABEL_HIGHT = "label_hight"
+LABEL_VERYHIGHT = "label_veryhight"
+LABEL_LOW = "label_low"
+LABEL_VERYLOW = "label_verylow"
 SPACE = "button_space"
 
 # Fragmento de musica.

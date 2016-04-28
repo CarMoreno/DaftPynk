@@ -1,6 +1,5 @@
 from view.interface import *
 from model.model import *
-from model.model_styles import *
 from PyQt4.QtCore import pyqtSlot
 import PyQt4
 
@@ -11,8 +10,7 @@ class ControllerLaunchpad(QtGui.QMainWindow):
 		self.view = Ui_MainWindow() #view es un objeto de la clase Ui_MainWindow (mi interface)
 		self.view.setupUi(self)
 		self.the_model = ModelLaunchpad() #Objeto del modelo
-		self.the_model_style = ModelStyle() #Objeto model de estilos
-		#self.button es un arreglo de tuplas (button, label)
+		# self.button es un arreglo de tuplas (button, label)
 		self.buttons = [
 			(self.view.button_a, self.view.label_harder),(self.view.button_d, self.view.label_faster),
 			(self.view.button_e, self.view.label_doit),(self.view.button_f, self.view.label_stronger),
@@ -22,7 +20,7 @@ class ControllerLaunchpad(QtGui.QMainWindow):
 			(self.view.button_p, self.view.label_never),(self.view.button_q, self.view.label_workit), 
 			(self.view.button_r, self.view.label_makeus),(self.view.button_s, self.view.label_better),
 			(self.view.button_u, self.view.label_morethan),(self.view.button_w, self.view.label_makeit),
-			(self.view.button_x, self.view.label_hight),(self.view.button_z, self.view.label_normal), 
+			(self.view.button_x, self.view.label_veryhight),(self.view.button_z, self.view.label_hight), 
 			(self.view.button_punto_coma, self.view.label_over)
 		]
 		self.connect_button()
@@ -32,25 +30,16 @@ class ControllerLaunchpad(QtGui.QMainWindow):
 	def wrapper(self):
 		"""Slot personalizado para la signal clicked de la tecla de espacio"""
 		self.the_model.behavior_space(self.view.button_space)
-		for button, label in self.buttons:
-			self.the_model_style.apply_style_pressed(button, label)	
 
 	@pyqtSlot()
 	def is_pressed(self):
 		"""Slot para cuando una tecla es presioanda"""
 		for button, label in self.buttons:
 			if button.isDown():#SI el boton actual fue presionado, entonces...
-				self.the_model_style.apply_style_pressed(button, label)#Aplicamos estilos al boton
-				self.the_model.manager_music(button, label)#Manejamos la gestion de musica		
-	@pyqtSlot()
-	def is_released(self):
-		"""Slot para cuando una tecla es liberada"""
-		for button, label in self.buttons:
-			if not button.isDown():
-				self.the_model_style.apply_style_released(button, label)
-								
+				self.the_model.manager_music(label)#Manejamos la gestion de musica		
+
 	def connect_button(self):
 		"""Conecta cada boton a las senales de pressed y released"""
 		for button, label in self.buttons:
 			button.pressed.connect(self.is_pressed)			
-			button.released.connect(self.is_released)
+			#button.released.connect(self.is_released)
