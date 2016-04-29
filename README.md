@@ -1,5 +1,5 @@
-# DaftPunkPythonic
-DaftPunkPythonic es un apliación inspirada en [Daftpunkconsole](http://codepen.io/kowlor/pen/MYOKRd), un famoso tablero musical construido sobre HTML5, CSS3 Y Javascript; la idea fue realizar una app similar a la anteriormente descrita pero usando solo el lenguaje Python (version 2.7) para ello se utilizó Pyqt4 para la interfaz gráfica y Pygame 1.9 para el manejo de sonidos. El tema elegido fue [Harder, better, faster, stronger](https://www.youtube.com/watch?v=gAjR4_CbPpQ) del famoso grupo Daft Punk.
+# DaftPink
+DaftPynk es un apliación inspirada en [Daftpunkconsole](http://codepen.io/kowlor/pen/MYOKRd), un famoso tablero musical construido sobre HTML5, CSS3 Y Javascript; la idea fue realizar una app similar a la anteriormente descrita pero usando solo el lenguaje Python (version 2.7) para ello se utilizó Pyqt4 para la interfaz gráfica y Pygame 1.9 para el manejo de sonidos. El tema elegido fue [Harder, better, faster, stronger](https://www.youtube.com/watch?v=gAjR4_CbPpQ) del famoso grupo Daft Punk.
 
 ## Requisitos.
 Para correr esta aplicación necesitas:
