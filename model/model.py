@@ -7,7 +7,6 @@ from constantes import *
 class ModelLaunchpad(object):
 	"""Clase que se encarga de gestionar los botones"""	
 	def __init__(self):
-		self.model_styles = ModelStyle()
 		self.model_music = ModelMusic()
 
 	def manager_music(self, label):
@@ -45,13 +44,13 @@ class ModelLaunchpad(object):
 		elif str(label.objectName()) == LABEL_OVER:
 			self.model_music.play_fragments(OVER)						
 		elif str(label.objectName()) == LABEL_HIGHT:
-			self.model_music.play_full()
+			self.model_music.play_full(50250)
 		elif str(label.objectName()) == LABEL_VERYHIGHT:
-			self.model_music.play_full()
+			self.model_music.play_full(53250)
 		elif str(label.objectName()) == LABEL_LOW:
-			self.model_music.play_full()
+			self.model_music.play_full(38250)
 		elif str(label.objectName()) == LABEL_VERYLOW:
-			self.model_music.play_full()			
+			self.model_music.play_full(36250)			
 
 	def behavior_space(self, button_space):
 		"""Comportamiento para la tecla espacio"""

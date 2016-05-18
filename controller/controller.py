@@ -20,11 +20,11 @@ class ControllerLaunchpad(QtGui.QMainWindow):
 			(self.view.button_p, self.view.label_never),(self.view.button_q, self.view.label_workit), 
 			(self.view.button_r, self.view.label_makeus),(self.view.button_s, self.view.label_better),
 			(self.view.button_u, self.view.label_morethan),(self.view.button_w, self.view.label_makeit),
-			(self.view.button_x, self.view.label_veryhight),(self.view.button_z, self.view.label_hight), 
-			(self.view.button_punto_coma, self.view.label_over)
+			(self.view.button_x, self.view.label_veryhight), (self.view.button_m, self.view.label_verylow),
+			(self.view.button_z, self.view.label_hight),(self.view.button_punto_coma, self.view.label_over)
 		]
+		self.view.button_space.pressed.connect(self.wrapper)
 		self.connect_button()
-		self.view.button_space.clicked.connect(self.wrapper)
 
 	@pyqtSlot()
 	def wrapper(self):
