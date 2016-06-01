@@ -1,5 +1,6 @@
 from view.interface import *
 from model.model import *
+from model.constantes import *
 from PyQt4.QtCore import pyqtSlot
 import PyQt4
 
@@ -12,16 +13,16 @@ class ControllerLaunchpad(QtGui.QMainWindow):
 		self.the_model = ModelLaunchpad() #Objeto del modelo
 		# self.button es un arreglo de tuplas (button, label)
 		self.buttons = [
-			(self.view.button_a, self.view.label_harder),(self.view.button_d, self.view.label_faster),
-			(self.view.button_e, self.view.label_doit),(self.view.button_f, self.view.label_stronger),
-			(self.view.button_i, self.view.label_hour),(self.view.button_j, self.view.label_ever),
-			(self.view.button_k, self.view.label_after),(self.view.button_l, self.view.label_workits),
-			(self.view.button_n, self.view.label_low),(self.view.button_o, self.view.label_our),
-			(self.view.button_p, self.view.label_never),(self.view.button_q, self.view.label_workit), 
-			(self.view.button_r, self.view.label_makeus),(self.view.button_s, self.view.label_better),
-			(self.view.button_u, self.view.label_morethan),(self.view.button_w, self.view.label_makeit),
-			(self.view.button_x, self.view.label_veryhight), (self.view.button_m, self.view.label_verylow),
-			(self.view.button_z, self.view.label_hight),(self.view.button_punto_coma, self.view.label_over)
+			(self.view.button_a, LABEL_HARDER),(self.view.button_d, LABEL_FASTER),
+			(self.view.button_e, LABEL_DOIT),(self.view.button_f, LABEL_STRONGER),
+			(self.view.button_i, LABEL_HOUR),(self.view.button_j, LABEL_EVER),
+			(self.view.button_k, LABEL_AFTER),(self.view.button_l, LABEL_WORKITS),
+			(self.view.button_n, LABEL_LOW),(self.view.button_o, LABEL_OUR),
+			(self.view.button_p, LABEL_NEVER),(self.view.button_q, LABEL_WORKIT), 
+			(self.view.button_r, LABEL_MAKEUS),(self.view.button_s, LABEL_BETTER),
+			(self.view.button_u, LABEL_MORETHAN),(self.view.button_w, LABEL_MAKEIT),
+			(self.view.button_x, LABEL_VERYHIGHT), (self.view.button_m, LABEL_VERYLOW),
+			(self.view.button_z, LABEL_HIGHT),(self.view.button_punto_coma, LABEL_OVER)
 		]
 		self.view.button_space.pressed.connect(self.wrapper)
 		self.connect_button()
@@ -29,7 +30,7 @@ class ControllerLaunchpad(QtGui.QMainWindow):
 	@pyqtSlot()
 	def wrapper(self):
 		"""Slot personalizado para la signal clicked de la tecla de espacio"""
-		self.the_model.behavior_space(self.view.button_space)
+		self.the_model.manager_music(SPACE)
 
 	@pyqtSlot()
 	def is_pressed(self):

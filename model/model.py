@@ -9,49 +9,50 @@ class ModelLaunchpad(object):
 	def __init__(self):
 		self.model_music = ModelMusic()
 
+	def get_model_music(self):
+		return self.model_music	
+
 	def manager_music(self, label):
 		"""Administrador de musica"""
-		if str(label.objectName()) == LABEL_WORIT:
+		if label == LABEL_WORKIT:
 			self.model_music.play_fragments(WORK_IT)
-		elif str(label.objectName()) == LABEL_MAKEIT:
+		elif label == LABEL_MAKEIT:
 			self.model_music.play_fragments(MAKE_IT)
-		elif str(label.objectName()) == LABEL_DOIT:
+		elif label == LABEL_DOIT:
 			self.model_music.play_fragments(DO_IT)
-		elif str(label.objectName()) == LABEL_MAKEUS:			
+		elif label == LABEL_MAKEUS:			
 			self.model_music.play_fragments(MAKE_US)
-		elif str(label.objectName()) == LABEL_MORETHAN:
+		elif label == LABEL_MORETHAN:
 			self.model_music.play_fragments(MORE_THAN)
-		elif str(label.objectName()) == LABEL_HOUR:
+		elif label == LABEL_HOUR:
 			self.model_music.play_fragments(HOUR)
-		elif str(label.objectName()) == LABEL_OUR:
+		elif label == LABEL_OUR:
 			self.model_music.play_fragments(OUR)
-		elif str(label.objectName()) == LABEL_NEVER:
+		elif label == LABEL_NEVER:
 			self.model_music.play_fragments(NEVER)	
-		elif str(label.objectName()) == LABEL_HARDER:
+		elif label == LABEL_HARDER:
 			self.model_music.play_fragments(HARDER)
-		elif str(label.objectName()) == LABEL_BETTER:
+		elif label == LABEL_BETTER:
 			self.model_music.play_fragments(BETTER)
-		elif str(label.objectName()) == LABEL_FASTER:
+		elif label == LABEL_FASTER:
 			self.model_music.play_fragments(FASTER)
-		elif str(label.objectName()) == LABEL_STRONGER:
+		elif label == LABEL_STRONGER:
 			self.model_music.play_fragments(STRONGER)
-		elif str(label.objectName()) == LABEL_EVER:
+		elif label == LABEL_EVER:
 			self.model_music.play_fragments(EVER)
-		elif str(label.objectName()) == LABEL_AFTER:
+		elif label == LABEL_AFTER:
 			self.model_music.play_fragments(AFTER)
-		elif str(label.objectName()) == LABEL_WORKITS:
+		elif label == LABEL_WORKITS:
 			self.model_music.play_fragments(WORK_ITS)
-		elif str(label.objectName()) == LABEL_OVER:
+		elif label == LABEL_OVER:
 			self.model_music.play_fragments(OVER)						
-		elif str(label.objectName()) == LABEL_HIGHT:
+		elif label == LABEL_HIGHT:
 			self.model_music.play_full(50250)
-		elif str(label.objectName()) == LABEL_VERYHIGHT:
+		elif label == LABEL_VERYHIGHT:
 			self.model_music.play_full(53250)
-		elif str(label.objectName()) == LABEL_LOW:
+		elif label == LABEL_LOW:
 			self.model_music.play_full(38250)
-		elif str(label.objectName()) == LABEL_VERYLOW:
+		elif label == LABEL_VERYLOW:
 			self.model_music.play_full(36250)			
-
-	def behavior_space(self, button_space):
-		"""Comportamiento para la tecla espacio"""
-		self.model_music.play_full()
+		elif label == SPACE:
+			self.model_music.play_full()	
