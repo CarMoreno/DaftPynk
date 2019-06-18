@@ -1,8 +1,4 @@
-import os
-import pygame
-import random
 from model_music import *
-from model_styles import *
 from constantes import *
 class ModelLaunchpad(object):
 	"""Clase que se encarga de gestionar los botones"""	
